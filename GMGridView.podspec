@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                    'the cellview to a fullsize display.'
   s.homepage    =  'https://github.com/gmoledina/GMGridView'
   s.author      =  { 'Gulam Moledina' =>  'http://www.gmoledina.ca/' }
-  s.source      =  { :git => 'https://github.com/MaximKeegan/GMGridView.git'}
+  s.source      =  { :git => 'https://github.com/MaximKeegan/GMGridView.git', :tag => '1.2'}
 
   s.source_files =  'GMGridView/*.{h,m}'
   s.requires_arc =  true

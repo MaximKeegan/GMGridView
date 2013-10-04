@@ -527,6 +527,15 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
     return valid;
 }
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+ if ([touch.view isKindOfClass:[UIButton class]])
+ {
+    return NO;
+ }
+    return YES;
+}
+
 //////////////////////////////////////////////////////////////
 #pragma mark Sorting gestures & logic
 //////////////////////////////////////////////////////////////
